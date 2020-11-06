@@ -1,0 +1,354 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f6e38a9f64d3ddbf6f3cd3a3d04e6ca2",
+    "packages": [
+        {
+            "name": "elevenone/darkmatter",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elevenone/darkmatter.git",
+                "reference": "d40d242ecb95b4a658b0057ce556a6024a4047c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elevenone/darkmatter/zipball/d40d242ecb95b4a658b0057ce556a6024a4047c0",
+                "reference": "d40d242ecb95b4a658b0057ce556a6024a4047c0",
+                "shasum": ""
+            },
+            "require": {
+                "elevenone/http": "~1.0.0",
+                "elevenone/logger": "~1.0.0",
+                "elevenone/payload": "~1.0.0",
+                "elevenone/router": "~1.0.0",
+                "ext-json": "*",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DarkMatter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zsolt Sándor",
+                    "email": "hello@elevenone.space"
+                }
+            ],
+            "description": "HTTP kernel for darkmatter",
+            "homepage": "https://elevenone.space",
+            "keywords": [
+                "darkmatter",
+                "elevenone",
+                "http",
+                "php"
+            ],
+            "time": "2020-10-30T20:03:22+00:00"
+        },
+        {
+            "name": "elevenone/http",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elevenone/http.git",
+                "reference": "d53606276937a1265c601ac52125bbcb926f701b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elevenone/http/zipball/d53606276937a1265c601ac52125bbcb926f701b",
+                "reference": "d53606276937a1265c601ac52125bbcb926f701b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DarkMatter\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zsolt Sándor",
+                    "email": "hello@elevenone.space"
+                }
+            ],
+            "description": "HTTP kernel for darkmatter",
+            "homepage": "https://elevenone.space",
+            "keywords": [
+                "darkmatter",
+                "elevenone",
+                "http",
+                "php"
+            ],
+            "time": "2020-10-23T14:37:37+00:00"
+        },
+        {
+            "name": "elevenone/logger",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elevenone/logger.git",
+                "reference": "e2e254b478ddc9bf9b09d3aa0a9acf228b199cc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elevenone/logger/zipball/e2e254b478ddc9bf9b09d3aa0a9acf228b199cc5",
+                "reference": "e2e254b478ddc9bf9b09d3aa0a9acf228b199cc5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DarkMatter\\Components\\Logger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zsolt Sándor",
+                    "email": "hello@elevenone.space"
+                }
+            ],
+            "description": "Logger for BlackMatter",
+            "homepage": "https://elevenone.space",
+            "keywords": [
+                "blackmatter",
+                "elevenone",
+                "file-logger",
+                "logger",
+                "null-logger",
+                "php",
+                "psr-3"
+            ],
+            "time": "2020-10-23T06:48:09+00:00"
+        },
+        {
+            "name": "elevenone/payload",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elevenone/payload.git",
+                "reference": "2e3273aafb857532306308cb60a813ef590cc2d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elevenone/payload/zipball/2e3273aafb857532306308cb60a813ef590cc2d3",
+                "reference": "2e3273aafb857532306308cb60a813ef590cc2d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DarkMatter\\Payload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zsolt Sándor",
+                    "email": "hello@elevenone.space"
+                }
+            ],
+            "description": "Domain Payload Object for DarkMatter",
+            "homepage": "https://elevenone.space",
+            "keywords": [
+                "adr",
+                "darkmatter",
+                "domain",
+                "elevenone",
+                "payload",
+                "php"
+            ],
+            "time": "2020-10-23T10:55:24+00:00"
+        },
+        {
+            "name": "elevenone/router",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elevenone/router.git",
+                "reference": "c76f3eb3d11b05270f46210ef29e8fb6cda7053f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elevenone/router/zipball/c76f3eb3d11b05270f46210ef29e8fb6cda7053f",
+                "reference": "c76f3eb3d11b05270f46210ef29e8fb6cda7053f",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/fast-route": "^1.3",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DarkMatter\\Components\\Router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zsolt Sándor",
+                    "email": "hello@elevenone.space"
+                }
+            ],
+            "description": "Router for DarkMatter",
+            "homepage": "https://elevenone.space",
+            "keywords": [
+                "darkmatter",
+                "elevenone",
+                "php",
+                "router"
+            ],
+            "time": "2020-10-23T07:23:37+00:00"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/181d480e08d9476e61381e04a71b34dc0432e812",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35|~5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "time": "2018-02-13T20:26:39+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "heroku/heroku-buildpack-php",
+            "version": "v182",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heroku/heroku-buildpack-php.git",
+                "reference": "78b5f5c03ace2fbc6e49a2a1a1b1188643d0ddb6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/78b5f5c03ace2fbc6e49a2a1a1b1188643d0ddb6",
+                "reference": "78b5f5c03ace2fbc6e49a2a1a1b1188643d0ddb6",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/heroku-hhvm-apache2",
+                "bin/heroku-hhvm-nginx",
+                "bin/heroku-php-apache2",
+                "bin/heroku-php-nginx"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Zuelke",
+                    "email": "dz@heroku.com"
+                }
+            ],
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
+            "homepage": "https://github.com/heroku/heroku-buildpack-php",
+            "keywords": [
+                "apache",
+                "apache2",
+                "foreman",
+                "heroku",
+                "hhvm",
+                "nginx",
+                "php"
+            ],
+            "time": "2020-10-12T17:22:24+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "elevenone/darkmatter": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.2"
+    },
+    "platform-dev": []
+}
