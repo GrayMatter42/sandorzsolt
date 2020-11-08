@@ -6,7 +6,7 @@ declare(strict_types = 1);
 
 $payload = [
     'status' => '42',
-    'message' => 'hello heroku world ? php file from github served through heroturko'
+    'message' => 'hello world'
 ];
 
 header('Content-Type: text/html; charset=utf-8');
