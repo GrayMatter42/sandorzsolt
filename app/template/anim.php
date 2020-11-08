@@ -87,6 +87,9 @@ h1 {
   font-family: arial;
   z-index: 10;
   position: relative;
+  /* color: #7a5598; */
+  color: #3B2F63;
+  
 }
 @keyframes orb1 {
   0% {
@@ -142,28 +145,12 @@ h1 {
 
 </style>
 
-<style>
 
-</style>
-
-
-
-
-
-<script>
-
-</script>
-
-<style>
-
-</style>
 <div class="headercontent">
-
-<div class="circle sunset"></div>
-<div class="circle coolice"></div>
-<div class="circle timber"></div>
-<div class="circle pig"></div>
-<div class="circle friday"></div>
-	
-<h1>42</h1>
+    <div class="circle sunset"></div>
+    <div class="circle coolice"></div>
+    <div class="circle timber"></div>
+    <div class="circle pig"></div>
+    <div class="circle friday"></div>
+    <h1>42</h1>
 </div>
