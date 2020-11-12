@@ -5,32 +5,13 @@
 declare(strict_types = 1);
 
 
-
-use elevenone\Components\View\Factory;
-
-
 $config = [
     'path_views' => __DIR__ . '/template/views',
 ];
 
 
-$factory = new Factory($config);
-$renderer = $factory->makeRenderer();
 
-$renderer->setLayout('layout');
-$renderer->setView('_partial');
-
-$view = $renderer->render(
-    '_partial', ['mock' => 'Hallo Layout!']);
-
-
-// echo($view);
-
-
-
-
-
-//
+//////////////////////////////////////////////////////////////////////////////////////////
 $number = [
     1234235345345345,
     3545435454354543,
@@ -42,7 +23,6 @@ $number = [
 $rand_keys = array_rand($number, 2);
 $serial = $number[$rand_keys[0]];
 
-
 $payload = [
     'status' => '42',
     'message' => 'hello world',
@@ -53,8 +33,82 @@ $payload = [
 ];
 
 header('Content-Type: text/html; charset=utf-8');
+//////////////////////////////////////////////////////////////////////////////////////////
 
-$layout = include __DIR__ . '/template/layout.php';
+
+
+
+
+
+// view stuff
+use elevenone\View\ViewFactory;
+
+$view_factory = new ViewFactory;
+$view = $view_factory->newInstance();
+
+// set views and layouts
+$view_registry = $view->getViewRegistry();
+$view_registry->set('index_view', __DIR__ . '/template/_index.php');
+$view_registry->set('_item', __DIR__ . '/template/_item.php');
+
+$layout_registry = $view->getLayoutRegistry();
+$layout_registry->set('layout', __DIR__ . '/template/layout.php');
+$layout_registry->set('_animation', __DIR__ . '/template/_animation.php');
+
+
+$data = [
+    [
+        'id' => '1',
+        'name' => 'mikka'
+    ],
+    [
+        'id' => '2',
+        'name' => 'makka'
+    ],
+    [
+        'id' => '3',
+        'name' => 'zorro'
+    ]
+];
+
+
+
+$view->setData(['payload' => $payload]);
+
+// set current view and layout
+$view->setView('index_view');
+$view->setLayout('layout');
+
+
+
+// result
+$response = $view->__invoke(); // or just $view()
+echo $response;
+
+
+
+
+
+
+
+
+// $layout = include __DIR__ . '/template/layout.php';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 exit;
 

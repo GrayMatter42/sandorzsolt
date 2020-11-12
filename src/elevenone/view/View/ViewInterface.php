@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace elevenone\Components\View;
+namespace elevenone\View;
 
 interface ViewInterface
 {

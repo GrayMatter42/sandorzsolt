@@ -9,14 +9,20 @@
 </head>
 <body>
 
-<?php include __DIR__ . '/anim.php'; ?>
+<?php
+$this->setSection('animation', $this->render('_animation'));
+echo $this->getSection('animation');
+?>
 
 <div id="header">
 <pre>
 <code>
-<?php print_r ($payload); ?>
+<?php echo $this->getContent(); ?>
 </code>
 </pre>
 </div>
+
+
+
 </body>
 </html>
